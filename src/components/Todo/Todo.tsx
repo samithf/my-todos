@@ -42,7 +42,7 @@ export const Todo: React.FC<TodoProps> = ({ todo, onClose, index }) => {
   return (
     <div
       style={{ ...animatonStyle }}
-      className="flex justify-between items-center p-4 rounded-full  text-gray-600 shadow-sm  hover:bg-gray-200 dark:text-gray-200 dark:hover:bg-gray-600 "
+      className="flex justify-between items-center p-4 rounded-full  text-gray-600 hover:bg-gray-200 dark:text-gray-200 dark:hover:bg-gray-600 "
     >
       <span className="text-lg">
         {index + 1}. {todo.task}

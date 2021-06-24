@@ -29,7 +29,7 @@ export const TodoList = () => {
   }
 
   return (
-    <div className="h-full w-1/2 mx-auto">
+    <div className="h-full w-full mx-auto md:w-1/2">
       <div className="fixed top-5 right-5">
         {theme === "dark" ? (
           <svg
@@ -59,10 +59,8 @@ export const TodoList = () => {
           </svg>
         )}
       </div>
-      <h1 className="text-center relative top-10 dark:text-gray-200">
-        My Todolist
-      </h1>
-      <form className="my-20 text-center" onSubmit={onSubmitForm}>
+      <h1 className="text-center py-10  dark:text-gray-200">My Todolist</h1>
+      <form className="my-10 text-center" onSubmit={onSubmitForm}>
         <Input
           value={currentTodo ? currentTodo.task : ""}
           placeholder="Type here"

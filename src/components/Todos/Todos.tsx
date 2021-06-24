@@ -9,10 +9,10 @@ interface TodosProps {
 
 export const Todos: React.FC<TodosProps> = ({ todoList, onCloseTodo }) => {
   return (
-    <ul>
+    <ul className="mx-auto md:w-1/2">
       {todoList.map((todo, index) => (
         <li key={todo.id}>
-          <Todo todo={todo} onClose={onCloseTodo} index={index}/>
+          <Todo todo={todo} onClose={onCloseTodo} index={index} />
         </li>
       ))}
     </ul>
